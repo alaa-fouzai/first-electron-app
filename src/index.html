@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="../assets/css/main.css" >
+    
+  </head>
+  <body>
+    <div>
+      <p id="ipaddress"></p>
+      <p id="testlate"></p>
+      <button class="primerybutton">start server</button>
+      <button class="dangerbutton">stop server</button>
+      <p>Total Number in queu :</p><p id="nbrfilesqueu"></p>
+      <p>Total Number of files sent :</p><p id="nbrfilessent"></p>
+      <p>Total Number of files received :</p><p id="nbrfilesReceived"></p>
+      <p></p><p id="output"></p>
+      <br>
+      <div id='filelist' class='app__files'></div>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" text="files to upload" multiple>
+        <button class="primerybutton" id="send">Expose</button>
+
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
