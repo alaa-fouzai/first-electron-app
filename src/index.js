@@ -48,5 +48,9 @@ window.electronAPI.eventReceivedFile((dataReceived) => {
   console.log("file received")
   document.getElementById('nbrfilesReceived').textContent = receivedList.length;
   });
+window.electronAPI.ipaddress((ip) => {
+  //handle ip
+  document.getElementById('ipaddress').textContent = ip;
+  });
 
 getdataSent();
